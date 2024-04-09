@@ -1,8 +1,11 @@
-function Post() {
-    return(
-        <>
-        <h1>Hello</h1>
-        </>
-    )
+import classes from "./Post.module.css";
+
+function Post(props) {
+  return (
+    <li className={classes.post}>
+      <p className={classes.author}>{props.author}</p>
+      <p className={classes.text}>{props.body}</p>
+    </li>
+  );
 }
-export default Post
+export default Post;
