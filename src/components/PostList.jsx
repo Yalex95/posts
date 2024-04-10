@@ -6,7 +6,6 @@ import {useLoaderData} from "react-router-dom"
 
 function PostList() {
   const posts = useLoaderData();
-  console.log(posts);
 
   /**Add post function */
   function addPostHandler(postData) {
